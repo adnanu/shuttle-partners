@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Melkin, Booking and Reservation form Wizard by Ansonika.">
+    <meta name="author" content="Ansonika">
+    <title>Fleet Sign Up - Shuttle</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+	
+	<!-- MODERNIZR -->
+	<script src="js/modernizr.js"></script>
+
+</head>
+
+<body>
+	
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div><!-- /Preload -->
+	
+	<div id="loader_form">
+		<div data-loader="circle-side-2"></div>
+	</div><!-- /loader_form -->
+	
+	<nav>
+		<ul class="cd-primary-nav">
+			<li><a href="index.html" class="animated_link">Home</a></li>
+			<!-- <li><a href="about-hotel.html" class="animated_link">View Rooms</a></li> -->
+			<li><a href="partner.html" class="animated_link">Partner with Us</a></li>
+			<li><a href="fleet.html" class="animated_link">Join Our Fleet Of Drivers & Riders</a></li>
+			<!-- <li><a href="contact-hotel.html" class="animated_link">Contact Us</a></li> -->
+			<!-- <li><a href="index-2.html" class="animated_link">Restaurant Version</a></li> -->
+			<!-- <li><a href="index-3.html" class="animated_link">Spa Version</a></li> -->
+		</ul>
+		<a href="index.html" id="logo"><img src="img/c.png" alt="" width="45" height="40"></a>
+	</nav>
+	<!-- /menu -->
+	
+	<div class="container-fluid full-height">
+		<div class="row row-height">
+			<div class="col-lg-6 content-left">
+				<div class="content-left-wrapper bg_hotel">
+					<div class="wrapper">
+						<a href="index.html" id="logo"><img src="img/c.png" alt="" width="45" height="40"></a>
+						<div id="social">
+							<ul>
+								<li><a href="www.linkedin.com/company/vellion"><i class="social_linkedin"></i></a></li>
+								<li><a href="www.twitter.com/shuttle_co"><i class="social_twitter"></i></a></li>
+								<li><a href="www.instagram.com/shvttle.co"><i class="social_instagram"></i></a></li>
+							</ul>
+						</div>
+						<!-- /social -->
+						<div class="left_title">
+							<h3>Join our Fleet</h3>
+							<p>Drivers, Riders & Couriers Registeration</p>
+						</div>
+					</div>
+				</div>
+				<!--/content-left-wrapper -->
+			</div>
+			<!-- /content-left -->
+
+			<div class="col-lg-6 content-right" id="start">
+				<div id="wizard_container">
+					<div id="top-wizard">
+							<div id="progressbar"></div>
+						</div>
+						<!-- /top-wizard -->
+						<form id="wrapped" method="POST">
+							<input id="website" name="website" type="text" value="">
+							<!-- Leave for security protection, read docs for details -->
+							
+							<div id="middle-wizard">
+								<div class="step">
+									<h3 class="main_question"><strong>1/5</strong>Please fill in your Personal details</h3>
+									<div class="form-group">
+										<input type="text" name="first_name" class="form-control required" placeholder="First Name">
+										<i class="icon-user"></i>
+									</div>
+									<div class="form-group">
+										<input type="text" name="last_name" class="form-control required" placeholder="Last Name">
+										<i class="icon-user"></i>
+									</div>
+									<div class="form-group">
+										<input type="text" name="dates" class="form-control required" placeholder="Date Of Birth">
+										<i class="icon-hotel-calendar_3"></i>
+									</div>
+									<div class="form-group">
+										<div class="styled-select clearfix">
+											<select class="wide required" name="gender">
+												<option value="">Select Gender</option>
+												<option value="Female">Female</option>
+												<option value="Male">Male</option>
+												<option value="Idiots">Idiots</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<input type="email" name="email" class="form-control required" placeholder="Email">
+										<i class="icon-envelope"></i>
+									</div>
+									<div class="form-group">
+										<input type="tel" name="telephone" class="form-control" placeholder="Telephone">
+										<i class="icon-phone"></i>
+									</div>
+								</div>
+
+								<div class="step">
+									<h3 class="main_question"><strong>2/5</strong>Please Enter your Contact info</h3>
+									<div class="form-group">
+										<textarea name="address" class="form-control required" placeholder="Addrress"></textarea>
+										<i class="icon-home"></i>
+									</div>
+									<div class="form-group">
+										<div class="styled-select clearfix">
+											 <select class="required ddslick" name="room_type">
+												<option value="" data-imagesrc="img/icons_select/add_bed.svg">Select State Of Origin</option>
+												<option value="Classic single">Classic single</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="styled-select clearfix">
+											 <select class="required ddslick" name="room_type">
+												<option value="" data-imagesrc="img/icons_select/add_bed.svg">Select LGA</option>
+												<option value="Classic single">Classic single</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<textarea class="form-control notes" placeholder="Special notes"></textarea>
+									</div>
+								</div>
+								<!-- /step-->
+								
+								<div class="step">
+									<h3 class="main_question"><strong>3/5</strong>Please fill in your Drivers License details & Image</h3>
+									<div class="form-group">
+										<input type="text" name="license_no" class="form-control required" placeholder="Driving License Number">
+										<i class="icon-doc"></i>
+									</div>
+									<div class="form-group">
+										<input type="text" name="dates" class="form-control required" placeholder="License Expiry Date">
+										<i class="icon-hotel-calendar_3"></i>
+									</div>
+									<div class="form-group">
+										<input type="text" name="vehicle_name" class="form-control required" placeholder="Vehicle Name">
+										<i class="icon-restaurant-car"></i>
+									</div>
+									<div class="form-group">
+										<div class="styled-select clearfix">
+											<select class="wide required" name="vehicle_type">
+												<option value="">Select Vehicle Type</option>
+												<option value="Bike">Bike</option>
+												<option value="Sedan">Sedan</option>
+												<option value="Van">Van</option>
+												<option value="Truck">Truck</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<input type="file" name="driverslicense_image" class="form-control required" placeholder="Drivers License Image">
+										<i class="icon-puzzle"></i>
+									</div>
+								</div>
+								<!-- /step-->
+
+								<div class="step">
+									<h3 class="main_question"><strong>4/5</strong>Please fill in your Vehicle details & Image</h3>
+									<div class="form-group">
+										<input type="text" name="vehicle_brand" class="form-control required" placeholder="Vehicle Brand">
+										<i class="icon-hotel-car"></i>
+									</div>
+									<div class="form-group">
+										<input type="text" name="vehicle_color" class="form-control required" placeholder="Vehicle Color">
+										<i class="icon-hotel-condition"></i>
+									</div>
+									<div class="form-group">
+										<input type="text" name="plate_no" class="form-control required" placeholder="Vehicle Plate Number">
+										<i class="icon-note"></i>
+									</div>
+									<div class="form-group">
+										<input type="text" name="chassis_no" class="form-control required" placeholder="Vehicle Chassis Number">
+										<i class="icon-paper-clip"></i>
+									</div>
+									<div class="form-group">
+										<input type="text" name="insurance_no" class="form-control required" placeholder="Vehicle Insurance Number">
+										<i class="icon-options-vertical"></i>
+									</div>
+									<div class="form-group">
+										<input type="text" name="dates" class="form-control required" placeholder="Vehicle Insurance Expiry Date">
+										<i class="icon-hotel-calendar_3"></i>
+									</div>
+									<div class="form-group">
+										<input type="file" name="vehicle_image" class="form-control required" placeholder="Vehicle Image">
+										<i class="icon-picture"></i>
+									</div>
+								</div>
+								<!-- /step-->
+								
+								<div class="step">
+									<h3 class="main_question"><strong>5/5</strong>Please fill in your Company/Orgaranization/Partner/Guarantor details</h3>
+									<div class="form-group">
+										<input type="text" name="full_name" class="form-control required" placeholder="Guarantor or Organization's Full Name">
+										<i class="icon-user"></i>
+									</div>
+									<div class="form-group">
+										<input type="text" name="g_address" class="form-control required" placeholder="Guarantor or Organization's Address">
+										<i class="icon-user"></i>
+									</div>
+									<div class="form-group">
+										<input type="email" name="g_email" class="form-control required" placeholder="Guarantor or Organization's Email">
+										<i class="icon-envelope"></i>
+									</div>
+									<div class="form-group">
+										<input type="tel" name="g_phone" class="form-control" placeholder="Guarantor or Organization's Contact Number">
+										<i class="icon-phone"></i>
+									</div>
+									<div class="form-group terms">
+										<label class="container_check">Please accept our <a href="#" data-toggle="modal" data-target="#terms-txt">Terms and conditions</a>
+											<input type="checkbox" name="terms" value="Yes" class="required">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+								</div>
+								<!-- /step-->
+
+								<div class="submit step">
+									<h3 class="main_question"><strong>5/5</strong>Please fill with your details</h3>
+									<div class="form-group">
+										<input type="text" name="first_name" class="form-control required" placeholder="First Name">
+										<i class="icon-user"></i>
+									</div>
+									<div class="form-group">
+										<input type="text" name="last_name" class="form-control required" placeholder="Last Name">
+										<i class="icon-user"></i>
+									</div>
+									<div class="form-group">
+										<input type="email" name="email" class="form-control required" placeholder="Email">
+										<i class="icon-envelope"></i>
+									</div>
+									<div class="form-group">
+										<input type="text" name="telephone" class="form-control" placeholder="Telephone">
+										<i class="icon-phone"></i>
+									</div>
+									<div class="form-group terms">
+										<label class="container_check">Please accept our <a href="#" data-toggle="modal" data-target="#terms-txt">Terms and conditions</a>
+											<input type="checkbox" name="terms" value="Yes" class="required">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+								</div>
+								<!-- /step-->
+								
+							</div>
+							<!-- /middle-wizard -->
+							<div id="bottom-wizard">
+								<button type="button" name="backward" class="backward">Prev</button>
+								<button type="button" name="forward" class="forward">Next</button>
+								<button type="submit" name="process" class="submit">Submit</button>
+							</div>
+							<!-- /bottom-wizard -->
+						</form>
+					</div>
+					<!-- /Wizard container -->
+				
+					<div class="footer">
+						<ul>
+							<li><a href="partner.html" class="animated_link">Partner with Us</a></li>
+							<li><a href="fleet.html" class="animated_link">Join Our Fleet</a></li>
+						</ul>
+						<em>All Rights Reserved. Shuttle © 2020.</em>
+					</div>
+					<!-- Footer -->
+			</div>
+			<!-- /content-right-->
+		</div>
+		<!-- /row-->
+	</div>
+	<!-- /container-fluid -->
+
+	<div class="cd-overlay-nav">
+		<span></span>
+	</div>
+	<!-- /cd-overlay-nav -->
+
+	<div class="cd-overlay-content">
+		<span></span>
+	</div>
+	<!-- /cd-overlay-content -->
+
+	<a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+	<!-- /menu button -->
+	
+	<!-- Modal terms -->
+	<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">
+					<h2>Sikee!!!.</h2>
+					<img src="img/IMG_6599.GIF" alt="Sike" height="120">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	
+	<!-- COMMON SCRIPTS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/common_scripts.min.js"></script>
+	<script src="js/velocity.min.js"></script>
+	<script src="js/functions.js"></script>
+
+	<!-- Wizard script -->
+	<script src="js/booking_hotel_func.js"></script>
+
+</body>
+</html>
