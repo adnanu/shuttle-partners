@@ -35,9 +35,9 @@
 <body onLoad="setTimeout('delayedRedirect()', 8000)" style="background-color:#fff;">
 <?php
 						$mail = $_POST['email'];
-						$to = "adnan@vellion.co";/* YOUR EMAIL HERE */
+						$to = "babaahmedadnan@gmail.com";/* YOUR EMAIL HERE */
 						$subject = "Registeration from Shuttle";
-						$headers = "From: Shuttle <noreply@hsvttle.co>";
+						$headers = "From: Shuttle <noreply@shvttle.co>";
 						$message = "DETAILS\n";
 
 						$message .= "\nFirst name: " . $_POST['first_name'];

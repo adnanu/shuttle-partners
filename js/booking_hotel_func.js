@@ -1,6 +1,6 @@
 	jQuery(function ($) {
 	    "use strict";
-	    $('form#wrapped').attr('action', 'booking_hotel.php');
+	    $('form#wrapped').attr('action', 'submit_complete.php');
 	    $("#wizard_container").wizard({
 	        stepsWrapper: "#wrapped",
 	        submit: ".submit",
