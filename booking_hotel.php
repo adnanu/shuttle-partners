@@ -47,7 +47,7 @@
 
 						$message .= "\nDate Of Birth: " . $_POST['dates'];
 						$message .= "\nGender: " . $_POST['gender'];
-						$message .= "\nState Of Origin: " . $_POST['sor'];
+						$message .= "\nState Of Origin: " . $_POST['state'];
 						$message .= "\nLGA: " . $_POST['lga'];
 
 						$message .= "\nDriving License Number: " . $_POST['license_no'];
