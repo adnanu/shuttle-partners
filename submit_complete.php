@@ -48,13 +48,13 @@
 						$message .= "\nDate Of Birth: " . $_POST['dates'];
 						$message .= "\nGender: " . $_POST['gender'];
 						$message .= "\nState Of Origin: " . $_POST['state'];
-						$message .= "\nLGA: " . $_POST['lga'];
+						// $message .= "\nLGA: " . $_POST['lga'];
 
 						$message .= "\nDriving License Number: " . $_POST['license_no'];
 						$message .= "\nGLicense Expiry Date: " . $_POST['license_expiry'];
 						$message .= "\nVehicle Name: " . $_POST['vehicle_name'];
 						$message .= "\nVehicle Type: " . $_POST['vehicle_type'];
-						$message .= "\nLicense Image: " . $_POST['driverslicense_image'];
+						// $message .= "\nLicense Image: " . $_POST['driverslicense_image'];
 
 						$message .= "\nVehicle Brand: " . $_POST['vehicle_brand'];
 						$message .= "\nVehicle Color: " . $_POST['vehicle_color'];
@@ -62,7 +62,7 @@
 						$message .= "\nChassis Number: " . $_POST['chassis_no'];
 						$message .= "\nInsurance Number: " . $_POST['insurance_no'];
 						$message .= "\nInsurance Expiry: " . $_POST['insurance_expiry'];
-						$message .= "\nVehicle Image: " . $_POST['vehicle_image'];
+						// $message .= "\nVehicle Image: " . $_POST['vehicle_image'];
 
 						$message .= "\nG.Full name: " . $_POST['gfull_name'];
 						$message .= "\nG.Address: " . $_POST['g_address'];
