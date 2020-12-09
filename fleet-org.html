@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Melkin, Booking and Reservation form Wizard by Ansonika.">
     <meta name="author" content="Ansonika">
-    <title>Fleet Sign Up - Shuttle</title>
+    <title>Organisation Fleet Sign Up - Shuttle</title>
 
     <!-- Favicons-->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -74,7 +74,7 @@
 						<!-- /social -->
 						<div class="left_title">
 							<h3>Join our Fleet</h3>
-							<p>Drivers, Riders & Couriers Registeration</p>
+							<p>Organisation Registeration</p>
 						</div>
 					</div>
 				</div>
@@ -135,53 +135,15 @@
 									</div>
 									<div class="form-group">
 										<div class="styled-select clearfix">
-											 <select class="required ddslick" name="sor" id="state" onchange="toggleLGA(this);">
-												<option value="" selected="selected" data-imagesrc="img/icons_select/add_bed.svg">Select State Of Origin</option>
+											 <select class="required ddslick" name="sor">
+												<option value="" data-imagesrc="img/icons_select/add_bed.svg">Select State Of Origin</option>
 												<option value="Classic single">Classic single</option>
-
-												<option value="Abia">Abia</option>
-												<option value="Adamawa">Adamawa</option>
-												<option value="AkwaIbom">AkwaIbom</option>
-												<option value="Anambra">Anambra</option>
-												<option value="Bauchi">Bauchi</option>
-												<option value="Bayelsa">Bayelsa</option>
-												<option value="Benue">Benue</option>
-												<option value="Borno">Borno</option>
-												<option value="Cross River">Cross River</option>
-												<option value="Delta">Delta</option>
-												<option value="Ebonyi">Ebonyi</option>
-												<option value="Edo">Edo</option>
-												<option value="Ekiti">Ekiti</option>
-												<option value="Enugu">Enugu</option>
-												<option value="FCT">FCT</option>
-												<option value="Gombe">Gombe</option>
-												<option value="Imo">Imo</option>
-												<option value="Jigawa">Jigawa</option>
-												<option value="Kaduna">Kaduna</option>
-												<option value="Kano">Kano</option>
-												<option value="Katsina">Katsina</option>
-												<option value="Kebbi">Kebbi</option>
-												<option value="Kogi">Kogi</option>
-												<option value="Kwara">Kwara</option>
-												<option value="Lagos">Lagos</option>
-												<option value="Nasarawa">Nasarawa</option>
-												<option value="Niger">Niger</option>
-												<option value="Ogun">Ogun</option>
-												<option value="Ondo">Ondo</option>
-												<option value="Osun">Osun</option>
-												<option value="Oyo">Oyo</option>
-												<option value="Plateau">Plateau</option>
-												<option value="Rivers">Rivers</option>
-												<option value="Sokoto">Sokoto</option>
-												<option value="Taraba">Taraba</option>
-												<option value="Yobe">Yobe</option>
-												<option value="Zamfara">Zamafara</option>
 											</select>
 										</div>
 									</div>
 									<div class="form-group">
 										<div class="styled-select clearfix">
-											 <select class="required ddslick select-lga" id="lga" name="lga">
+											 <select class="required ddslick" name="room_type">
 												<option value="" data-imagesrc="img/icons_select/add_bed.svg">Select LGA</option>
 												<option value="Classic single">Classic single</option>
 											</select>
@@ -258,8 +220,7 @@
 								</div>
 								<!-- /step-->
 								
-
-								<div class="submit step">
+								<div class="step">
 									<h3 class="main_question"><strong>5/5</strong>Please fill in your Company/Orgaranization/Partner/Guarantor details</h3>
 									<div class="form-group">
 										<input type="text" name="gfull_name" class="form-control required" placeholder="Guarantor or Organization's Full Name">
@@ -275,6 +236,33 @@
 									</div>
 									<div class="form-group">
 										<input type="tel" name="g_phone" class="form-control" placeholder="Guarantor or Organization's Contact Number">
+										<i class="icon-phone"></i>
+									</div>
+									<div class="form-group terms">
+										<label class="container_check">Please accept our <a href="#" data-toggle="modal" data-target="#terms-txt">Terms and conditions</a>
+											<input type="checkbox" name="terms" value="Yes" class="required">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+								</div>
+								<!-- /step-->
+
+								<div class="submit step">
+									<h3 class="main_question"><strong>5/5</strong>Please fill with your details</h3>
+									<div class="form-group">
+										<input type="text" name="first_name" class="form-control required" placeholder="First Name">
+										<i class="icon-user"></i>
+									</div>
+									<div class="form-group">
+										<input type="text" name="last_name" class="form-control required" placeholder="Last Name">
+										<i class="icon-user"></i>
+									</div>
+									<div class="form-group">
+										<input type="email" name="email" class="form-control required" placeholder="Email">
+										<i class="icon-envelope"></i>
+									</div>
+									<div class="form-group">
+										<input type="text" name="telephone" class="form-control" placeholder="Telephone">
 										<i class="icon-phone"></i>
 									</div>
 									<div class="form-group terms">
@@ -336,29 +324,8 @@
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 				</div>
 				<div class="modal-body">
-					<h1>TERMS AND CONDITIONS</h1>
-					<h6>Last updated December 09, 2020</h6>
-					<hr>
-					<h3>Agreement to Terms</h3>
-					<p>These Terms and Conditions constitute a legally binding agreement made between you, whether personally or on behalf of an entity (you), and Shuttle(Shvttle.co), located at No.3 Durban St, Wuse, Abuja, Federal Capital Territory 900001, Nigeria (we, us), concerning your access to and use of the Shuttle (https://www.shvttle.co) website as well as any related applications (the Site).</p>
-					<p>The Site provides the following services:  (Services). You agree that by accessing the Site and/or Services, you have read, understood, and agree to be bound by all of these Terms and Conditions.</p>
-					<p>If you do not agree with all of these Terms and Conditions, then you are prohibited from using the Site and Services and you must discontinue use immediately. We recommend that you print a copy of these Terms and Conditions for future reference.</p>
-					<p>The supplemental policies set out in Section 1.7 below, as well as any supplemental terms and condition or documents that may be posted on the Site from time to time, are expressly incorporated by reference.</p>
-					<p>We may make changes to these Terms and Conditions at any time. The updated version of these Terms and Conditions will be indicated by an updated "Revised" date and the updated version will be effective as soon as it is accessible. You are responsible for reviewing these Terms and Conditions to stay informed of updates. Your continued use of the Site represents that you have accepted such changes.</p>
-					<p>We may update or change the Site from time to time to reflect changes to our products, our users' needs and/or our business priorities.</p>
-					<p>Our site is directed to people residing in the . The information provided on the Site is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation or which would subject us to any registration requirement within such jurisdiction or country.</p>
-					<p>The Site is intended for users who are at least 18 years old. If you are under the age of 18, you are not permitted to register for the Site or use the Services without parental permission.</p>
-					<p>Additional policies which also apply to your use of the Site include:</p>
-						<ul>
-							<li>Our Privacy Notice  which sets out the terms on which we process any personal data we collect from you, or that you provide to us. By using the Site, you consent to such processing and you warrant that all data provided by you is accurate.</li>
-							<li>Our Acceptable Use Policy, which sets out the permitted uses and prohibited uses of the Site. When using the Site, you must comply with this Acceptable Use Policy.</li>
-							<li>If you purchase physical goods, digital goods, services, software, and/or content from the Site, our terms and conditions of supply will apply to thesales, use, and licence.</li>
-							<li>Certain parts of this Site can be used only on payment of a fee. If you wish to use such Services, you will, in addition to our Terms and Conditions, also be subject to our Terms and conditions of supply</li>
-						</ul>
-
-
-
-					<!-- <img src="img/IMG_6599.GIF" alt="Sike" height="120"> -->
+					<h2>Sikee!!!.</h2>
+					<img src="img/IMG_6599.GIF" alt="Sike" height="120">
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn_1" data-dismiss="modal">Close</button>
@@ -378,9 +345,6 @@
 
 	<!-- Wizard script -->
 	<script src="js/booking_hotel_func.js"></script>
-
-	<script src="js/lga.min.js"></script>
-
 
 </body>
 </html>
