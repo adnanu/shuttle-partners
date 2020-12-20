@@ -45,4 +45,4 @@
 	    $('input[name="dates"]').on('cancel.daterangepicker', function (ev, picker) {
 	        $(this).val('');
 	    });
-	});
+	});2

@@ -5,9 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Melkin, Booking and Reservation form Wizard by Ansonika.">
-    <meta name="author" content="Ansonika">
-    <title>Parnter Sign up - Shuttle</title>
+    <title>Partner Sign up - Shuttle</title>
 
     <!-- Favicons-->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -25,7 +23,7 @@
     <link href="css/style.css" rel="stylesheet">
 	<link href="css/vendors.css" rel="stylesheet">
 
-    <!-- YOUR CUSTOM CSS -->
+    <!-- CUSTOM CSS -->
     <link href="css/custom.css" rel="stylesheet">
 	
 	<!-- MODERNIZR -->
@@ -47,7 +45,7 @@
 			<li><a href="index.html" class="animated_link">Home</a></li>
 			<!-- <li><a href="about-hotel.html" class="animated_link">View Rooms</a></li> -->
 			<li><a href="partner.html" class="animated_link">Partner with Us</a></li>
-			<li><a href="fleet.html" class="animated_link">Join Our Fleet Of Drivers & Riders</a></li>
+			<li><a href="fleet-home.html" class="animated_link">Join Our Fleet</a></li>
 			<!-- <li><a href="contact-hotel.html" class="animated_link">Contact Us</a></li> -->
 			<!-- <li><a href="index-2.html" class="animated_link">Restaurant Version</a></li> -->
 			<!-- <li><a href="index-3.html" class="animated_link">Spa Version</a></li> -->
@@ -92,8 +90,24 @@
 							
 							<div id="middle-wizard">
 								<div class="step">
-									<h3 class="main_question"><strong>1/3</strong>Enter your Booking details</h3>
+									<h3 class="main_question"><strong>1/3</strong>Enter your Business details</h3>
 									<div class="form-group">
+										<input type="text" name="b_name" class="form-control required" placeholder="Business Name">
+										<i class="icon-user"></i>
+									</div>
+									<div class="form-group">
+										<textarea class="form-control notes" name="b_address" placeholder="Business Address"></textarea>
+									</div>
+									<div class="form-group">
+										<input type="email" name="b_email" class="form-control required" placeholder="Business Email">
+										<i class="icon-envelope"></i>
+									</div>
+									<div class="form-group">
+										<input type="text" name="b_phone" class="form-control" placeholder="Business Phone">
+										<i class="icon-phone"></i>
+									</div>
+
+									<!-- <div class="form-group">
 										<input type="text" name="dates" class="form-control required" placeholder="Check in - Check out">
 										<i class="icon-hotel-calendar_3"></i>
 									</div>
@@ -130,21 +144,46 @@
 									</div>
 									<div class="form-group">
 										<textarea class="form-control notes" placeholder="Special notes"></textarea>
-									</div>
+									</div> -->
 								</div>
 								<!-- /step-->
 								
 								<div class="step">
-									<h3 class="main_question"><strong>2/3</strong>Select Booking Options</h3>
+									<h3 class="main_question"><strong>2/3</strong>Enter your Industry details</h3>
+									<div class="form-group">
+										<div class="styled-select clearfix">
+											 <select class="required ddslick" name="b_type" style="padding: 8px;">
+												<option value="">Select Industry</option>
+												<option value="Beverages">Beverages</option>
+												<option value="Caterting">Caterting</option>
+												<option value="Courier">Courier</option>
+												<option value="Concierge">Concierge</option>
+												<option value="Desserts">Desserts</option>
+												<option value="Flowers">Flowers</option>
+												<option value="Gifting">Gifting</option>
+												<option value="Grocery">Grocery</option>
+												<option value="Laundry/Dry-cleaning">Laundry/Dry-cleaning</option>
+												<option value="Moving/Storage">Moving/Storage</option>
+												<option value="Novelties">Novelties</option>
+												<option value="Produce">Produce</option>
+												<option value="Pharmacy/Medical">Pharmacy/Medical</option>
+												<option value="Prepared Meals">Prepared Meals</option>
+												<option value="Restaurants">Restaurants</option>
+												<option value="Retail/eCommerce">Retail/eCommerce</option>
+												<option value="Shipping/Postal">Shipping/Postal</option>
+												<option value="3rd-Party Logistics">3rd-Party Logistics</option>
+											</select>
+										</div>
+									</div>
 									<div class="form-group options clearfix">
-										<i class="icon-hotel-bottle"></i><em>Welcome drink <strong>+$24</strong></em>
+										<i class="icon-hotel-car"></i><em>Company owned Riders/Drivers/Couriers </em>
 										<label class="switch-light switch-ios float-right">
-											<input type="checkbox" value="Welcome drink" name="options[]">
+											<input type="checkbox" value="Do you manage a fleet of Riders/Drivers" name="options[]">
 											<span><span>No</span><span>Yes</span></span>
 											<a></a>
 										</label>
 									</div>
-									<div class="form-group options clearfix">
+									<!-- <div class="form-group options clearfix">
 										<i class="icon-hotel-coffee"></i><em>Breakfast <strong>+$14</strong></em>
 										<label class="switch-light switch-ios float-right">
 											<input type="checkbox" value="Breakfast included" name="options[]">
@@ -159,7 +198,7 @@
 											<span><span>No</span><span>Yes</span></span>
 											<a></a>
 										</label>
-									</div>
+									</div> 
 									<div class="form-group options clearfix">
 										<i class="icon-hotel-car"></i><em>Pick up <strong>+$50</strong></em>
 										<label class="switch-light switch-ios float-right">
@@ -167,26 +206,26 @@
 											<span><span>No</span><span>Yes</span></span>
 											<a></a>
 										</label>
-									</div>
+									</div>-->
 								</div>
 								<!-- /step-->
 								
 								<div class="submit step">
-									<h3 class="main_question"><strong>3/3</strong>Please fill with your details</h3>
+									<h3 class="main_question"><strong>3/3</strong>Company Management Contact details</h3>
 									<div class="form-group">
-										<input type="text" name="first_name" class="form-control required" placeholder="First Name">
+										<input type="text" name="first_name" class="form-control required" placeholder="Registrant First Name">
 										<i class="icon-user"></i>
 									</div>
 									<div class="form-group">
-										<input type="text" name="last_name" class="form-control required" placeholder="Last Name">
+										<input type="text" name="last_name" class="form-control required" placeholder="Registrant Last Name">
 										<i class="icon-user"></i>
 									</div>
 									<div class="form-group">
-										<input type="email" name="email" class="form-control required" placeholder="Email">
+										<input type="email" name="email" class="form-control required" placeholder="Registrant Email">
 										<i class="icon-envelope"></i>
 									</div>
 									<div class="form-group">
-										<input type="text" name="telephone" class="form-control" placeholder="Telephone">
+										<input type="text" name="telephone" class="form-control" placeholder="Registrant Phone">
 										<i class="icon-phone"></i>
 									</div>
 									<div class="form-group terms">
@@ -247,9 +286,29 @@
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 				</div>
 				<div class="modal-body">
-					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
-					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
-					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<!-- <h1>TERMS AND CONDITIONS</h1> -->
+					<h6>Last updated December 09, 2020</h6>
+					<hr>
+					<h3>Agreement to Terms</h3>
+					<p>These Terms and Conditions constitute a legally binding agreement made between you, whether personally or on behalf of an entity (you), and Shuttle(Shvttle.co), located at No.3 Durban St, Wuse, Abuja, Federal Capital Territory 900001, Nigeria (we, us), concerning your access to and use of the Shuttle (https://www.shvttle.co) website as well as any related applications (the Site).</p>
+					<p>The Site provides the following services:  (Services). You agree that by accessing the Site and/or Services, you have read, understood, and agree to be bound by all of these Terms and Conditions.</p>
+					<p>If you do not agree with all of these Terms and Conditions, then you are prohibited from using the Site and Services and you must discontinue use immediately. We recommend that you print a copy of these Terms and Conditions for future reference.</p>
+					<p>The supplemental policies set out in Section 1.7 below, as well as any supplemental terms and condition or documents that may be posted on the Site from time to time, are expressly incorporated by reference.</p>
+					<p>We may make changes to these Terms and Conditions at any time. The updated version of these Terms and Conditions will be indicated by an updated "Revised" date and the updated version will be effective as soon as it is accessible. You are responsible for reviewing these Terms and Conditions to stay informed of updates. Your continued use of the Site represents that you have accepted such changes.</p>
+					<p>We may update or change the Site from time to time to reflect changes to our products, our users' needs and/or our business priorities.</p>
+					<p>Our site is directed to people residing in the . The information provided on the Site is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation or which would subject us to any registration requirement within such jurisdiction or country.</p>
+					<p>The Site is intended for users who are at least 18 years old. If you are under the age of 18, you are not permitted to register for the Site or use the Services without parental permission.</p>
+					<p>Additional policies which also apply to your use of the Site include:</p>
+						<ul>
+							<li>Our Privacy Notice  which sets out the terms on which we process any personal data we collect from you, or that you provide to us. By using the Site, you consent to such processing and you warrant that all data provided by you is accurate.</li>
+							<li>Our Acceptable Use Policy, which sets out the permitted uses and prohibited uses of the Site. When using the Site, you must comply with this Acceptable Use Policy.</li>
+							<li>If you purchase physical goods, digital goods, services, software, and/or content from the Site, our terms and conditions of supply will apply to thesales, use, and licence.</li>
+							<li>Certain parts of this Site can be used only on payment of a fee. If you wish to use such Services, you will, in addition to our Terms and Conditions, also be subject to our Terms and conditions of supply</li>
+						</ul>
+
+
+
+					<!-- <img src="img/IMG_6599.GIF" alt="Sike" height="120"> -->
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn_1" data-dismiss="modal">Close</button>
